@@ -1,4 +1,3 @@
-/* <-----------all theme of website--------------> */
  * {
     margin: 0;
     padding: 0;
@@ -20,23 +19,32 @@ header{
     text-align: center;
     padding: 20px;
 }
-/* <----------------home page-----------> */
+footer{
+    background-color:rgb(223, 176, 223);
+    position: sticky;
+    justify-content: center;
+    padding: 15px;
+
+}
 h1{
     color:purple;
     font-size: 40px;
+    
 }
  section.home{
     display: flex;
     padding: 40px;
     background: #eee;
-    background-image: url("images/Isometric\ Cloud\ With\ Library\ And\ Open\ Book\,\ Online\,\ Isometric\,\ Education\ PNG\ and\ Vector\ with\ Transparent\ Background\ for\ Free\ Download.jfif") ;
-    background-size:cover;
+    background-image: linear-gradient(to right, #eee 0%, rgba(233, 202, 233, 0.2) 100%), 
+url("images/Isometric Cloud With Library And Open Book, Online, Isometric, Education PNG and Vector with Transparent Background for Free Download.jfif");
+    background-size:contain;
     background-repeat: no-repeat;
     background-attachment:scroll;
-    background-position:right -350px;
-    max-width: 100%;
+    background-position:right center;
+    align-items: center;
+    width: 100%;
     max-height: 1000px;
-    min-height: 500px;
+    min-height: 100vh;;
 } 
 .text{
     width:50%;
@@ -65,17 +73,17 @@ h1{
     height: auto;
     border-radius: 15px;
 }
-/* <---------------------navigation bar-------------> */
 nav{
     background-color:rgb(233, 202, 233);
     position: sticky;
     top: 0;
 }
 nav ul{
-    display: flex;  /*to make them beside each other*/
+    list-style: none;
+    display: flex;  
     padding: 10px 0;
     justify-content: center;
-    gap: 50px;
+    gap: 60px;
 }
 nav a{
     color: purple;
@@ -87,9 +95,6 @@ nav a{
 nav a:hover{
     color:#f2f2f2;
 }
-
-/* <--------------------second page courses----------> */
-
  table {
     width: 90%;
     margin: 20px auto;
@@ -113,7 +118,6 @@ nav a:hover{
     border: 1px solid rgb(240, 234, 240);
     text-align: left;
 }
-/* <--------------------third page add courses------------------> */
 .add h2{
     margin-bottom: 10px;
     background: #eee;
@@ -148,25 +152,37 @@ button{
 button:hover{
     background-color:rgb(228, 207, 228);
 }
-/* <-----------------last page contact-----------------------> */
-/* <----------to be rosponsive in phone----------> */
 @media (max-width: 600px) {
     section.home {
-        flex-direction: column-reverse;
+        flex-direction:row;
         text-align: center;            
-        padding: 20px;                   
+        padding: 0px;                   
         height: auto;                   
         min-height: auto;                
         justify-content: center;        
         gap: 20px;
+        background:scroll;
+        background-position: center bottom;
+        background-size: cover;
+    }
+    .image img{
+        display: block;
+        margin: 20px auto;
+        max-width: 80%;
+        height: auto;
     }
     .text{
         width: 100%;
     }
     nav ul {
-        flex-direction: column;
+        flex-direction:row;
         text-align: center;
+        gap: 23px;
+    }
+    nav a{
+        font-size: 12px;
     }
     
-    table { font-size: 14px; }
+    table { font-size: 14px;
+    width: auto; }
 }
