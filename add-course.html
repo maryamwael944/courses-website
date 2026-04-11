@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Courses</title>
+    <link rel="stylesheet" href="index.style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Course organizer</h1>
+    </header>
+    <nav> <!--       to link all the four pages -->
+        <ul>
+            <!-- link and the name of each page  -->
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="courses.html">My_Courses</a></li>
+            <li><a href="add-course.html">Add_Courses</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="add">
+            <h2>ِAdd a New Courses</h2>
+            <p>Please fill out the form below to add a course to your list.</p>
+        </section>
+        <form action=" " method="post">
+            <div class="form">
+                <label for="name">Course Name :</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form">
+                <label for="inst">Instractor :</label>
+                <input type="text" id="inst" required>
+            </div>
+            <div class="form">
+                <label for="hour">Hours :</label>
+                <input type="number" id="hour" min="1" max="4" required>
+            </div>
+            <div class="form">
+                <label for="note">Notes :</label>
+                <textarea type="text" id="note" rows="3"></textarea>
+            </div>
+            <button type="submit">Save Course</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Personal Course Organizer - GitHup</p>
+    </footer>
+</body>
+
+</html>

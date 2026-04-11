@@ -1,0 +1,172 @@
+/* <-----------all theme of website--------------> */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#eee;
+    color:black;
+    line-height: 1.6;
+    align-items: center;
+    padding: 50px;
+
+}
+header{
+    background-color:#eee;
+    padding: 10px 20px;
+    border-bottom:solid #eee;
+    text-align: center;
+    padding: 20px;
+}
+/* <----------------home page-----------> */
+h1{
+    color:purple;
+    font-size: 40px;
+}
+ section.home{
+    display: flex;
+    padding: 40px;
+    background: #eee;
+    background-image: url("images/Isometric\ Cloud\ With\ Library\ And\ Open\ Book\,\ Online\,\ Isometric\,\ Education\ PNG\ and\ Vector\ with\ Transparent\ Background\ for\ Free\ Download.jfif") ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position:right -350px;
+    max-width: 100%;
+    max-height: 1000px;
+    min-height: 500px;
+} 
+.text{
+    width:50%;
+}
+.text h2{
+    font-size: 35px;
+    color:purple;
+    margin-bottom: 20px;
+}
+.text p{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 30px;
+}
+.image{
+    /* flex: 1;
+    max width: 350px;
+    height: 4px; */
+    text-align: center;
+    border-radius: 15px;
+    height: auto;
+}
+.image img{
+    flex: 1;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+}
+/* <---------------------navigation bar-------------> */
+nav{
+    background-color:rgb(233, 202, 233);
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    display: flex;  /*to make them beside each other*/
+    padding: 10px 0;
+    justify-content: center;
+    gap: 50px;
+}
+nav a{
+    color: purple;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+nav a:hover{
+    color:#f2f2f2;
+}
+
+/* <--------------------second page courses----------> */
+
+ table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #eee;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.courses h2{
+    margin-bottom: 10px;
+    background: #eee;
+}
+.courses p{
+    font-size: 20px;
+}
+ th, td {
+    color: black;
+    background-color:#eee;
+    width:50px;
+    height: fit-content;
+    padding: 14px;
+    border: 1px solid rgb(240, 234, 240);
+    text-align: left;
+}
+/* <--------------------third page add courses------------------> */
+.add h2{
+    margin-bottom: 10px;
+    background: #eee;
+}
+.add p{
+    font-size: 20px;
+}
+form{
+    width: 500px;
+    margin:30px auto;
+    padding: 10px;
+    background-color: #eee;
+}
+label{
+    display:block;
+    margin-bottom:10px;
+    font-weight: bold;
+}
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    border:10px solid  rgb(240, 234, 240);
+    border-radius: 5px;
+}
+button{
+    background-color:rgb(214, 174, 214);
+    color:black;
+    padding: 10px;
+    font-size: 15px;
+    font-weight:400;
+}
+button:hover{
+    background-color:rgb(228, 207, 228);
+}
+/* <-----------------last page contact-----------------------> */
+/* <----------to be rosponsive in phone----------> */
+@media (max-width: 600px) {
+    section.home {
+        flex-direction: column-reverse;
+        text-align: center;            
+        padding: 20px;                   
+        height: auto;                   
+        min-height: auto;                
+        justify-content: center;        
+        gap: 20px;
+    }
+    .text{
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    table { font-size: 14px; }
+}
