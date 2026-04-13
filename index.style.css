@@ -15,8 +15,10 @@ body{
     background-color:#eee;
     color:black;
     line-height: 1.6;
+    min-height: 100vh;
+    margin: 0;
     align-items: center;
-    padding: 50px;
+    padding: 0px;
 
 }
 header{
@@ -30,11 +32,9 @@ footer{
     text-align: center;
     padding: 15px;
     position: relative;
-    bottom: 0;
     width: 100%;
     margin-top: auto;
     margin-bottom: 0%;
-
 }
 h1{
     color:purple;
@@ -161,14 +161,20 @@ button:hover{
 }
 .contact{
     height: 100%;
-    margin: 5px 30px 200px;
+    width: 90%;      
+    max-width: 600px;     
+    margin: 30px auto; 
+    margin-bottom:30%;
+    padding: 20px;         
+    background-color: rgb(243, 238, 243); 
+    border-radius: 10px;   
+    box-shadow: 0 4px 10px rgb(228, 207, 228); 
+    box-sizing: border-box;
+    padding-left: 40px; 
+    list-style-position: outside;
+
 }
-.box{
-    margin-top: 5px;
-}
-.card{
-    margin-top: 20px;
-}
+
 @media (max-width: 600px) {
     * {
         max-width: 100%;
