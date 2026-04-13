@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box; 
 }
+html,body{
+    height: 100%;
+    margin: 0;
+}
+main , .content-wrapper{
+    flex: 1;
+}
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color:#eee;
@@ -20,10 +27,13 @@ header{
     padding: 20px;
 }
 footer{
-    background-color:rgb(223, 176, 223);
-    position: sticky;
-    justify-content: center;
+    text-align: center;
     padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 0%;
 
 }
 h1{
@@ -60,9 +70,6 @@ url("images/Isometric Cloud With Library And Open Book, Online, Isometric, Educa
     margin-bottom: 30px;
 }
 .image{
-    /* flex: 1;
-    max width: 350px;
-    height: 4px; */
     text-align: center;
     border-radius: 15px;
     height: auto;
@@ -153,7 +160,14 @@ button:hover{
     background-color:rgb(228, 207, 228);
 }
 .contact{
-    margin: 30px 30px 150px;
+    height: 100%;
+    margin: 5px 30px 200px;
+}
+.box{
+    margin-top: 5px;
+}
+.card{
+    margin-top: 20px;
 }
 @media (max-width: 600px) {
     * {
