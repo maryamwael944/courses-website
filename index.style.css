@@ -43,6 +43,7 @@ h1{
 }
  section.home{
     display: flex;
+    margin-top:-100px;
     padding: 40px;
     background: #eee;
     background-image: linear-gradient(to right, #eee 0%, rgba(233, 202, 233, 0.2) 100%), 
