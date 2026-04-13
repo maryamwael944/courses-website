@@ -110,10 +110,12 @@ nav a:hover{
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .courses h2{
+    margin-left: 20px;
     margin-bottom: 10px;
     background: #eee;
 }
 .courses p{
+    margin-left: 20px;
     font-size: 20px;
 }
  th, td {
@@ -126,10 +128,12 @@ nav a:hover{
     text-align: left;
 }
 .add h2{
+    margin-left: 20px;
     margin-bottom: 10px;
     background: #eee;
 }
 .add p{
+    margin-left: 20px;
     font-size: 20px;
 }
 form{
